@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Panel Viewer</title>
+
+<style type="text/css">
+@import url(http://allyourbase.local/css/baseline.css);
+
+#page-container {width:550px;padding:5px;border:1px solid #DEDEDE;margin:0 auto;}
+
+.panel {border:1px solid #EEEEEE;}
+.panel-header {background-color:#EEEEEE;padding:2px 10px;}
+
+.image-panel {padding:10px;}
+.image-panel img {display:block;padding:5px;border:1px solid #999999;}
+.image-panel img.left {margin:0 10px 0 0;}
+.image-panel img.right {margin:0 0 0 10px;}
+
+.goog-zippy-collapsed {background-color:#EEEEEE;}
+.goog-zippy-expanded {background-color:#DEDEDE;font-weight:bold;}
+</style>
+
+<script src="http://google.closure.local/goog/base.js"></script>
+<script src="/js/panel.js"></script>
+<script src="/js/staticPanelData.js"></script>
+</head>
+<body>
+
+<div id="page-container">
+
+    <div id="panel-container">
+    </div>
+
+</div>
+
+<script>
+function main() {
+	var panelContainer = document.getElementById('panel-container');
+	var panels = allyourbase.panelviewer.makePanels('medium', panelData, panelContainer);
+}
+
+main();
+</script>
+</body>
+
+</html>
+

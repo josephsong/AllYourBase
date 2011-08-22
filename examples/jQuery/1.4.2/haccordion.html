@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Haccordion example | jQuery | All Your Base</title>
+
+<!-- LOAD JQUERY FROM GOOGLE CDN -->
+<script src="http://www.google.com/jsapi"></script>
+<script>
+  google.load("jquery", "1.4.2");
+  google.load("jqueryui", "1.8.2");
+</script>
+
+<!-- PAGE STARTUP -->
+<script src="/js/namespace.js"></script>
+<script src="/js/jQuery/1.4.2/startup.js"></script>
+
+<style type="text/css">
+	@import url(/css/allyourbase.css);
+	@import url(/css/forms.css);
+	@import url(/examples/css/ayb.css);
+		
+	#haccordion {width:100%;height:300px;overflow:hidden;margin:0 auto;/*border:1px solid #333;*/}
+	
+	ul#haccordion-container {width:101%;margin:0 auto;}
+	ul#haccordion-container li.haccordion-item {float:left;}
+	/*ul#haccordion-container li.last {}*/
+	#haccordion-container a {text-decoration:none;}
+	div.haccordion-panel {overflow:hidden;/*border-right:1px solid #333;*/}
+	ul#haccordion-container li.last div.haccordion-panel {border-right:none;}
+	a.haccordion-button {display:block;height:300px;background-color:#CCC;position:relative;}
+	div.haccordion-info {position:absolute;bottom:0;width:100%;height:300px;background:transparent url(../../images/info-panel.png) 0 0 repeat;}
+	div.haccordion-info div {padding:3%;color:#FFF;}
+	
+	div.haccordion-panel img {position:absolute;left:-50%;}
+	div.haccordion-panel img {display:block;margin:auto;}
+	
+	div.haccordion-info div.big-headline {padding:0;position:absolute;bottom:0;width:100%;}
+	div.big-headline h3 {text-transform:uppercase;/*font-size:167%;*/font-size:307%;line-height:.8;margin:0;}
+	
+</style>
+
+</head>
+
+<body class="center nojs">
+	<div id="page">
+		
+		<div id="haccordion">
+			<ul id="haccordion-container" class="clearcontents">
+			
+				<li class="haccordion-item " style="width:25%;"> 
+					<div class="haccordion-panel"><a class="haccordion-button" target="_blank" href="http://google.com"> 
+						<img src="../../images/P8060985.jpg" width="400" height="300" alt="Lorem Ipsum. Dolor Sit Amet." /> 
+						<div class="haccordion-info"> 
+							<div class="big-headline"> 
+								<h3>Lorem Ipsum. Dolor Sit Amet.</h3> 
+							</div> 
+						</div> 
+					</a></div> 
+				</li> 
+				
+								
+				<li class="haccordion-item " style="width:25%;"> 
+					<div class="haccordion-panel"><a class="haccordion-button" target="_blank" href="http://google.com"> 
+						<img src="../../images/P8060986.jpg" width="400" height="300" alt="Porta Vitae Rutrum." /> 
+						<div class="haccordion-info"> 
+							<div class="big-headline"> 
+								<h3>Porta Vitae Rutrum.</h3> 
+							</div> 
+						</div> 
+					</a></div> 
+				</li> 
+				
+								
+				<li class="haccordion-item " style="width:25%;"> 
+					<div class="haccordion-panel"><a class="haccordion-button" target="_blank" href="http://google.com"> 
+						<img src="../../images/P8060989.jpg" width="400" height="300" alt="Venat! non Vehicul." /> 
+						<div class="haccordion-info"> 
+							<div class="big-headline"> 
+								<h3>Venat! non Vehicul.</h3> 
+							</div> 
+						</div> 
+					</a></div> 
+				</li> 
+				
+								
+				<li class="haccordion-item last" style="width:25%;"> 
+					<div class="haccordion-panel"><a class="haccordion-button" target="_blank" href="http://google.com"> 
+						<img src="../../images/P8060991.jpg" width="400" height="300" alt="Feugiat id Nibh. Nulla Facilisi." /> 
+						<div class="haccordion-info"> 
+							<div class="big-headline"> 
+								<h3>Feugiat id Nibh. Nulla Facilisi.</h3> 
+							</div> 
+						</div> 
+					</a></div> 
+				</li>
+
+				
+			</ul>
+		</div>
+
+	</div>
+	
+	<div id="footer">
+		<a href="/">Back</a>
+	</div>
+
+<!-- LOAD PAGE SCRIPTS -->
+<script src="/js/jQuery/1.4.2/AllYourBase/ui/Haccordion.js"></script>
+
+</body>
+</html>

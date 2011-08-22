@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Notepad</title>
+<script src="http://closure.google.local/base.js"></script>
+<script src="/js/notepad.js"></script>
+</head>
+<body>
+<div id="notes">
+</div>
+
+<script>
+function main() {
+  var noteData = [
+    {'title': 'Note 1', 'content': 'Content of Note 1', 'imageName': ''},
+    {'title': 'Note 2', 'content': 'Content of Note 2', 'src': ''}];
+
+  var noteListElement = document.getElementById('notes');
+  var notes = tutorial.notepad.makeNotes(noteData, noteListElement);
+}
+main();
+</script>
+</body>
+
+</html>

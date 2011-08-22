@@ -1,0 +1,80 @@
+/*
+
+A-GRADE BROWSER COMPATIBLE CSS RESET AND DEFAULT STYLESHEET
+
+*/
+
+/* DO NOT CHANGE */
+
+/* RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+ol,ul {list-style:none;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+
+/*html {background-color:#FFFFFF;color:#000000;}*/
+body {background-color:#FFFFFF;color:#000000;}
+
+/* HTML 5 */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block;padding:0;margin:0;}
+
+/* FONTS */
+body {font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
+table {font-size:inherit;font:100%;}
+th {font-style:normal;font-weight:normal;text-align:left;}
+code {font-family:monospace;*font-size:108%;line-height:100%;}
+input, textarea, select, option, optgroup {font-family:arial,helvetica,clean,sans-serif;font-size:inherit;font-weight:inherit;font-style:inherit;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+
+em {font-style:italic;font-weight:normal;}
+strong {font-style:normal;font-weight:bold;}
+
+/* FLOATS */
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.clearabove {line-height:0;height:0;font-size:0;clear:both;} /* Use on a clearing element following a float */
+.clearcontents {overflow:hidden;zoom:1;word-wrap:break-word;} /*Use on a container to clear enclosed floats */
+
+/* POSITION */
+.relative {position:relative;}
+.absolute {position:absolute;}
+
+/* HIDE */
+.none {display:none;}
+.hidden {visibility:hidden;}
+
+/* CENTER CONTAINER */
+body.center #container, body.center #page {margin-right:auto;margin-left:auto;}
+
+/* LINKS */
+a {text-decoration:none;}
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {font-weight:bold;}
+h1 {font-size:182%;margin:0 0 .75em 0;}
+h2 {font-size:167%;margin:0 0 .75em 0;}
+h3 {font-size:153.9%;margin:0 0 .5em 0;}
+h4 {font-size:138.5%;margin: 0 0 .5em 0;}
+h5 {font-size:123.1%;margin:0 0 .25em 0;}
+h6 {font-size:108%;margin:0 0 .25em 0;}
+
+/* TEXT */
+p, ol, ul {margin:0 0 1em 0;}
+
+/* DEFAULT LIST STYLES *//* add class="default-list" to ol, ul */
+ol.default-list, ul.default-list {margin-left:1.5em;}
+ol.default-list li {list-style:decimal outside;margin:0 0 .5em 0;}
+ul.default-list li {list-style:disc outside;margin:0 0 .5em 0;}
+
+
+/* ---------------------------------
+YUI FONT SIZING CHART: 10px=77% 11px=85% 12px=93% 13px=100% 14px=108% 15px=116% 16px=123.1% 17px=131% 18px=138.5% 19px=146.5% 20px=153.9% 21px=161.6% 22px=167% 23px=174% 24px=182% 25px=189% 26px=197%
+--------------------------------- */

@@ -1,0 +1,54 @@
+/*
+
+A-GRADE BROWSER COMPATIBLE SIMPLE BUTTON, EXTENDS AYB.CSS
+
+BUTTON WIDTH WILL "SHRINK WRAP" TEXT CONTENT BY DEFAULT
+SPECIFIC WIDTH BUTTONS CAN BE CREATED BY ASSIGNING A WIDTH THE <SPAN> ELEMENT
+
+SAMPLE USAGE:
+
+	<div class="button-row clearcontents">
+		<a href="#" class="btn-standard left"><span>Button Left</span></a>
+	</div>
+	<div class="button-row clearcontents">
+		<a href="#" class="btn-standard centered"><span>Button Centered</span></a>
+	</div>
+	<div class="button-row clearcontents">
+		<a href="#" class="btn-standard right"><span>Button Right</span></a>
+	</div>
+
+*/
+
+/* STANDARD BUTTON */
+.button-row {text-align:center;}
+a.btn-standard {display:block;padding:0 0 0 15px;background:transparent url(/assets/images/button/btn-std.gif) 0 0 no-repeat;color:#000000;font-size:108%;text-transform:lowercase;text-decoration:none;cursor:pointer;}
+.button-row a.centered {display:inline-block;margin:0 auto;}
+a.btn-standard:hover {text-decoration:none;background-position:0 -30px;}
+a.btn-standard:active {text-decoration:none;background-position:0 -60px;}
+a.btn-standard span {display:block;height:30px;line-height:28px;padding:0 15px 0 0;background:transparent url(/assets/images/button/btn-std.gif) right 0 no-repeat;}
+a.btn-standard:hover span {background-position:right -30px;}
+a.btn-standard:active span {background-position:right -60px;line-height:29px;}
+
+/*
+
+USAGE AS FORM INPUT:
+
+	<div class="button-row clearcontents">
+		<a class="btn-standard centered form-input">
+			<span>Button Input</span>
+			<input type="submit" value="Submit" id="btn-submit">
+		</a>
+	</div>
+
+a.form-input { position:relative; }
+
+input#btn-submit {
+  display:block;
+  width:100%; height:30px;
+  position:absolute; top:0; left:0;
+  border:0;
+  opacity:0;
+  cursor:pointer;
+}
+*/
+

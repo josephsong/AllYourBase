@@ -1,0 +1,30 @@
+/*
+
+A-GRADE BROWSER COMPATIBLE FORM ELEMENT HANDLING, EXTENDS AYB.CSS
+
+*/
+
+/* FORMS */
+fieldset {border:1px solid #cccccc;}
+fieldset {padding:10px;margin:0 0 10px;}
+legend {color:#333333;font-weight:bold;padding:2px;margin:0 5px;}
+fieldset fieldset legend {color:#CCCCCC;}
+
+select, textarea, label.text-input input, textarea {border:1px solid #CCCCCC;padding:2px;}
+label.radio-input, label.checkbox-input {margin:0 3px;}
+
+/* fieldset class="cell" */
+fieldset.cell label {display:block;width:100%;margin:0 0 5px 0;padding:0;}
+fieldset.cell label {overflow:hidden;zoom:1;word-wrap:break-word;}
+fieldset.cell label span {display:block;float:left;width:20%;height:1.2em;line-height:1.2em;padding:3px;margin:0 2px 0 0;}
+fieldset.cell label.text-input input {display:block;float:left;width:70%;}
+fieldset.cell label select {display:block;float:left;width:70%;}
+fieldset.cell label textarea {display:block;float:left;width:70%;}
+
+/* fieldset class="stack" */
+fieldset.stack label {display:block;width:100%;margin:0 0 5px 0;padding:0;}
+fieldset.stack label {overflow:hidden;zoom:1;word-wrap:break-word;}
+fieldset.stack label span {display:block;}
+fieldset.stack label.text-input input {display:block;width:90%;}
+fieldset.stack label select {display:block;float:left;width:90%;}
+fieldset.stack label textarea {display:block;float:left;width:90%;}

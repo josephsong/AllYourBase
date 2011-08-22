@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Flash External Interface example | jQuery | All Your Base</title>
+
+<!-- LOAD JQUERY FROM GOOGLE CDN -->
+<script src="http://www.google.com/jsapi"></script>
+<script>
+  google.load("jquery", "1.4.2");
+  google.load("jqueryui", "1.8.2");
+</script>
+
+<!-- PAGE STARTUP -->
+<script src="/js/namespace.js"></script>
+<script src="/js/jQuery/1.4.2/startup.js"></script>
+
+<style type="text/css">
+	@import url(/css/allyourbase.css);
+	@import url(/css/forms.css);
+	@import url(/examples/css/ayb.css);
+	
+	#main-nav {margin:0;padding:0;}
+	#main-nav li {display:inline;}
+	#main-nav li a {display:block;padding:20px;float:left;}
+	#main-nav li a {color:#3399FF;}
+	#main-nav li a:hover {color:#ff9900;}
+	#main-nav li a:focus {outline:none;}
+	#main-nav li a.current-item {color:#ff9900;font-weight:bold;}
+	
+</style>
+
+</head>
+
+<body class="center nojs">
+	<div id="page">
+		
+		<ul id="main-nav" class="clearcontents">
+			<li><a href="button-one.html">Button One</a></li>
+			<li><a href="button-two.html">Button Two</a></li>
+			<li><a href="button-three.html">Button Three</a></li>
+		</ul>
+		
+		<hr/>
+		
+		<div id="flash-content"></div>
+
+	</div>
+	
+	<div id="footer">
+		<a href="/">Back</a>
+	</div>
+
+<!-- LOAD PLUGINS -->
+<script src="/js/jQuery/1.4.2/plugins/jquery.swfobject-1.1.1.min.js"></script>
+<script src="/js/jQuery/1.4.2/plugins/jquery.address-1.2.2.min.js"></script>
+
+
+<!-- LOAD PAGE SCRIPTS -->
+<script src="/js/jQuery/1.4.2/AllYourBase/util/ExternalInterface.js"></script>
+
+</body>
+</html>

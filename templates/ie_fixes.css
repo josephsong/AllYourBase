@@ -1,0 +1,25 @@
+/* IE SOLUTIONS */
+/* IE FIX - MIN/MAX WIDTH */
+#container {
+	max-width:1024px;
+	min-width:800px;
+	width:expression(Math.max(Math.min((document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth), 1024), 800)+'px');
+}
+
+/* IE FIX - PNG TRANSPARENCY */
+img {behavior:url(../lib/htc/pngfix/iepngfix.htc);}
+div {background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src='/images/image_name.png');}
+
+/* IE FIX - :hover */
+body {behavior:url(../lib/htc/csshover2.htc);}
+
+/* IE FIX - Double Float Bug */
+element {display:inline;}
+
+/* CROSS BROWSER TRANSPARENCY */
+/* Element must hasLayout in IE, Define either width or height */
+div.transparency {
+	filter:alpha(opacity=60);/* for IE */
+	-moz-opacity:0.6;/* for Mozilla -- Not needed for Firefox 2 */
+	opacity:0.6;/* CSS3 standard */
+}

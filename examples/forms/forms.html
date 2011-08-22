@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Forms | All Your Base</title>
+<style type="text/css">
+@import url(/css/allyourbase.css);
+@import url(/css/forms.css);
+@import url(/examples/css/ayb.css);
+
+.invalid {border:1px solid red !important;}
+</style>
+
+</head>
+
+<body class="nojs center">
+
+<div id="page">
+
+	<form id="page-form" class="validate-on-submit">
+		<fieldset>
+			<legend>Demo Form</legend>	
+			
+			<fieldset class="cell">
+				<legend>Login</legend>
+				<label class="text-input"><span>Username:</span><input type="text" /></label>
+				<label class="text-input"><span>Password:</span><input type="password" /></label>
+			</fieldset>
+			
+			<fieldset class="cell">
+				<legend>User Info</legend>
+				<label class="text-input"><span>Name:</span><input type="text" /></label>
+				<label class="text-input"><span>Email:</span><input type="text" class="validate-email" /></label>
+				<label class="text-input"><span>Phone:</span><input type="text" class="validate-telephone" /></label>
+				<label class="text-input"><span>Address:</span><input type="text" /></label>
+				<label class="text-input"><span>&nbsp;</span><input type="text" /></label>
+				<label class="text-input"><span>City:</span><input type="text" /></label>
+				<label class="text-input"><span>State:</span><input type="text" /></label>
+				<label class="text-input"><span>Zip:</span><input type="text" class="validate-zip" /></label>
+			</fieldset>
+			
+			<fieldset class="cell">
+				<legend>Message</legend>
+				<label><span>Select:</span>
+					<select>
+						<option>Option 1</option>
+						<option>Option 2</option>
+					</select>
+				</label>
+				<label><span>Textarea:</span><textarea></textarea></label>
+				<label class="file-input"><span>File Input:</span><input type="file" /></label>
+			</fieldset>
+			
+			<fieldset class="stack">
+				<legend>Radio Set</legend>
+				<label><input type="radio" /> Yes</label>
+				<label><input type="radio" /> No</label>
+				<label><input type="radio" /> Maybe</label>
+			</fieldset>
+			
+			<fieldset class="stack">
+				<legend>Checkbox Set</legend>
+				<label><input type="checkbox" /> Red</label>
+				<label><input type="checkbox" /> Green</label>
+				<label><input type="checkbox" /> Blue</label>
+			</fieldset>
+			
+			<fieldset>
+				<label><input type="submit" value="Submit" /></label>
+				<label><input type="reset" value="Reset" /></label>
+			</fieldset>
+			
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="footer">
+	<a href="/">Back</a>
+</div>
+
+	<!-- Global Scripts -->
+	<script type="text/javascript" src="/js/namespace.js"></script>
+	<script type="text/javascript" src="/js/mootools/1.2/MooTools/mootools-1.2.3-core-yc.js"></script>
+	<script type="text/javascript" src="/js/mootools/1.2/MooTools/mootools-1.2.3.1-more-Element.Measure-Element.Position.js"></script>
+	
+	<!-- Page Scripts -->
+	<script type="text/javascript" src="/js/mootools/1.2/AllYourBase/util/Validate.js"></script>
+	<script type="text/javascript">
+		$('page-form').addEvent('submit', function(e) {
+			e.preventDefault();
+			var is_valid;
+			is_valid = AYB.util.Validate.validate(e);
+			if(is_valid) {
+				console.log('Passed Validation');
+				//submit form
+			} else {
+				console.log('Form has errors');	
+			}
+		});
+	</script>
+
+
+</body>
+</html>

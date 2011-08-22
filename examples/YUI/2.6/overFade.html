@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>OverFade | YUI | All Your Base</title>
+
+<style type="text/css">
+@import url(/css/allyourbase.css);
+@import url(/examples/css/ayb.css);
+
+ul {}
+ul li {display:inline;}
+ul li a {display:block;float:left;width:60px;height:90px;padding:10px;margin:0 1px 0 0;text-align:center;background:#FF9900 url(/assets/images/overFade/glass.png) 0 0 no-repeat;}
+ul#menu li a {text-transform:uppercase;font-weight:bold;color:#FFFFFF;}
+
+.nojs ul li a:hover {background-color:#FFCC00;}
+.ie6 ul#menu li a {background-image:none;}
+</style>
+
+</head>
+
+<body class="nojs center">
+
+<div id="page">
+    
+    <ul id="menu" class="clearcontents">
+		<li><a href="#">Link 1</a></li>
+		<li><a href="#">Link 2</a></li>
+		<li><a href="#">Link 3</a></li>
+		<li><a href="#">Link 4</a></li>
+	</ul>
+    <hr />
+    <p>HTML element transitions background-color on mouseover. PNG transparency overlay appled as background-image.</p>
+	
+</div>
+
+<div id="footer">
+	<a href="/">Back</a>
+</div>
+
+<!-- Dependencies -->
+<script src="http://yui.yahooapis.com/2.6.0/build/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript"></script>
+<script src="/js/ie_util.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/namespace.js"></script>
+<!-- Source file -->
+<script src="http://yui.yahooapis.com/2.6.0/build/animation/animation-min.js" type="text/javascript"></script>
+
+<script src="/js/yui/2.6/AllYourBase/ui/OverFade.js" type="text/javascript"></script>
+<script type="text/javascript">
+	YAHOO.util.Dom.removeClass(YAHOO.util.Dom.getElementsBy(function(el){return true;},'body'), 'nojs');
+
+	new AYB.ui.OverFade();
+</script>
+
+</body>
+</html>

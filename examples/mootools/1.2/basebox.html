@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>BaseBox example | MooTools | All Your Base</title>
+<style type="text/css">
+@import url(/css/allyourbase.css);
+@import url(/examples/css/ayb.css);
+
+#basebox-wrapper {border: 1px solid #333333; padding: 15px; background-color: #ffffff;}
+#basebox-wrapper.basebox-tooltip { background-color: #ff9900; }
+</style>
+</head>
+<body class="center">
+	<div id="page">
+		<ul>
+			<li><a href="#" id="basebox-loadString">Load by string (innerHTML)</a></li>
+			<li><a href="#" id="basebox-loadElement">Load by element (DOM node)</a></li>
+			<li><a href="helpers/hellofriend.html" id="basebox-loadXhr" class="basebox">Load by XHR (no additional script)</a></li>
+			<li><a href="#" id="basebox-loadTooltip" rel="Sneaky <em>Pete!</em>">Load tooltip with rel attribute</a></li>
+			<li><a href="#" id="basebox-loadTooltip" class="basebox-tooltip" rel="<strong>Rich</strong> Uncle Skeleton">Load tooltip (no additional script)</a></li>
+		</ul>
+	</div>
+	
+	<div id="footer">
+		<a href="/">Back</a>
+	</div>
+	
+	<div id="freeload" class="none">this is the <em>freeloading</em> section</div>
+	
+	<!-- Global Scripts -->
+	<script type="text/javascript" src="/js/namespace.js"></script>
+	<script type="text/javascript" src="/js/mootools/1.2/MooTools/mootools-1.2.3-core-yc.js"></script>
+	<script type="text/javascript" src="/js/mootools/1.2/MooTools/mootools-1.2.3.1-more-Element.Measure-Element.Position.js"></script>
+	
+	<!-- Page Scripts -->
+	<script type="text/javascript" src="/js/mootools/1.2/AllYourBase/ui/global/BaseBox.js"></script>
+	<script type="text/javascript">
+		$('basebox-loadString').addEvent('click', function(evt) {
+			evt.preventDefault();
+			AYB.basebox.showMarkup($('freeload').get('html'));
+		});
+		$('basebox-loadElement').addEvent('click', function(evt) {
+			evt.preventDefault();
+			AYB.basebox.showMarkup($('freeload'));
+		});
+		$('basebox-loadTooltip').addEvent('mouseenter', function(evt) {
+			evt.target = $(evt.target);
+			AYB.basebox.showTooltip(evt.target.get('rel'), evt.target);
+		});
+		$('basebox-loadTooltip').addEvent('mouseleave', function(evt) {
+			AYB.basebox.handleMouseLeave();
+		});
+	</script>
+</body>
+</html>

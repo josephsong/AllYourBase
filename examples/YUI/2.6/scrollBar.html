@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Scrollbars | YUI | All Your Base</title>
+</head>
+
+<style type="text/css">
+@import url(/css/allyourbase.css);
+@import url(/examples/css/ayb.css);
+
+.scroll_container {width:300px;border:1px solid #353535;position:relative;}
+.scroll_content {width:285px;height:300px;overflow:hidden;}
+.scrollbar {position:absolute;right:0;top:0;width:10px;height:300px;background-color:#CCCCCC;cursor:pointer;}
+.scroller {height:25px;background-color:#999999;cursor:pointer;}
+
+.nojs .scroll_content {width:300px;overflow:auto;}
+.nojs .scrollbar {display:none;}
+</style>
+
+<body class="nojs center">
+
+<div id="page">
+
+	<div id="scrollNode" class="scroll_container">
+		<div class="scrollbar"><div class="scroller"></div></div>
+		<div class="scroll_content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras orci ligula, aliquet ut, sodales a, congue non, lorem. Vestibulum lorem quam, volutpat ac, volutpat gravida, feugiat et, diam. Etiam mi enim, dapibus non, tempus a, adipiscing ac, pede. Sed tempus accumsan sem. Quisque lorem purus, adipiscing id, hendrerit vitae, condimentum ac, mauris. Etiam at sem. Morbi dignissim pulvinar libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi pharetra dapibus quam. In ut orci quis sapien feugiat laoreet. Praesent id mi quis purus lacinia luctus. Ut semper vehicula eros. In et velit vitae libero imperdiet tincidunt.</p>
+			<p>Sed odio neque, sollicitudin eu, varius semper, lacinia ac, velit. Vivamus elementum aliquam sem. Etiam tempor lacus ac magna. Mauris volutpat. Phasellus ipsum sapien, consequat vel, imperdiet et, sagittis vitae, velit. Suspendisse auctor sodales dui. Donec blandit. Curabitur convallis tincidunt nisl. Nulla mattis mi mattis erat. Donec molestie tortor id felis. Aliquam adipiscing tortor quis nibh. Phasellus sagittis risus in leo mollis luctus. Donec fringilla sagittis eros. Proin velit nunc, tristique quis, rhoncus vitae, porta nec, dui. Duis sollicitudin euismod risus. Nulla facilisi. Donec egestas faucibus lacus. Cras vel est ac dolor dapibus imperdiet. Nullam pretium purus non nulla.</p>
+			<p>Nam a urna vel leo cursus interdum. Praesent sit amet tortor. Maecenas lectus. Vestibulum in nisl aliquet odio tincidunt tincidunt. Cras et libero ac nibh pharetra sagittis. Vestibulum et risus. Sed vitae mi. Fusce suscipit, dolor ut consequat viverra, erat lorem pharetra magna, ac venenatis quam neque non odio. Morbi vel ipsum. Praesent erat. Sed vitae neque. Curabitur scelerisque massa non tortor. Suspendisse et ligula in augue vehicula accumsan. Nam vehicula tempor justo. Maecenas gravida sapien eu turpis.</p>
+		</div>
+	</div>
+
+</div>
+
+<div id="footer">
+	<a href="/">Back</a>
+</div>
+
+<!-- Dependencies -->
+<script src="http://yui.yahooapis.com/2.6.0/build/yahoo-dom-event/yahoo-dom-event.js" type="text/javascript"></script>
+<script src="http://yui.yahooapis.com/2.6.0/build/dragdrop/dragdrop-min.js" type="text/javascript"></script>
+<script src="js/ie_util.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/namespace.js"></script>
+<!-- Source file -->
+<script src="http://yui.yahooapis.com/2.6.0/build/animation/animation-min.js" type="text/javascript"></script>
+
+<script src="/js/yui/2.6/AllYourBase/ui/ScrollBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+	YAHOO.util.Dom.removeClass(YAHOO.util.Dom.getElementsBy(function(el){return true;},'body'), 'nojs');
+	
+	new AYB.ui.ScrollBar({rootNodeId: 'scrollNode'});
+</script>
+
+</body>
+</html>

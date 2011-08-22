@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Bitlyizer example | jQuery | All Your Base</title>
+<style type="text/css">
+@import url(/css/allyourbase.css);
+@import url(/css/forms.css);
+@import url(/examples/css/ayb.css);
+
+.success, .error {padding:3px;margin:0 0 2px;}
+.success {background-color: #E9FFEA;}
+.error {background-color: #FFDCD9;}
+#loading-img {width:16px;height:20px;background:transparent url(/assets/images/ajax-loader.gif) center center no-repeat;margin:0 3px;}
+</style>
+<!-- LOAD JQUERY FROM GOOGLE CDN -->
+<script src="http://www.google.com/jsapi"></script>
+<script>
+  google.load("jquery", "1.4.2");
+  google.load("jqueryui", "1.8.2");
+</script>
+</head>
+<body class="center">
+	<div id="page">
+		<form id="bitly-example" name="bitly-example" method="get" action="">
+			<fieldset class="cell">
+				<legend>Shorten with Bit.ly</legend>
+				<label class="text-input"><span>Long Url:</span><input type="text" id="long-url" name="long-url" value="http://example.com" /></label>
+				<label class="left" style="width:auto;"><input type="submit" /><div id="loading-img" class="left" style="display:none;"></div></label>
+			</fieldset>
+		</form>
+		
+		<div id="result-container"></div>
+	</div>
+	
+	<div id="footer">
+		<a href="/">Back</a>
+	</div>
+	
+	<!-- Global Scripts -->
+	<script type="text/javascript" src="/js/namespace.js"></script>
+	
+	<!-- Page Scripts -->
+	<script type="text/javascript" src="/js/jQuery/1.4.2/AllYourBase/util/Bitlyizer.js"></script>
+
+	
+</body>
+</html>
